@@ -1,0 +1,352 @@
+
+
+
+
+
+
+
+
+
+body {
+    background-color: rgb(226, 226, 226);
+    font-family: 'Soyuz Grotesk', sans-serif;;
+    text-align: center;
+   
+}
+    
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    color: rgb(186, 235, 209);  
+    font-family:'Soyuz Grotesk', sans-serif;;
+}
+
+.logo {
+    width: 3rem;
+    padding-left: 15%;
+    padding-right: 5%;
+    left: 10px;
+    right: 80px;
+    height: 35px;
+   margin-left: 30px;
+ 
+}
+
+
+.headertitle {
+    text-align: left; 
+    justify-content: left;
+    padding-right: 55%;
+    margin-left: 10px;
+}
+
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer{
+    position: fixed; 
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    width: 100%;
+    background:rgb(186, 235, 209);
+    padding: 15px 20px;
+    margin: 0 auto; 
+    font-family:'Soyuz Grotesk', sans-serif;;
+    align-items:self-start
+    
+      
+}
+
+.instagram-link {
+    color: #000000;
+    font-size: 20px;
+    display: flex;
+    position: absolute;
+    bottom: 50%;
+    left: 1250px;
+    right: 0px;
+    padding: .1px;
+    top: 30%;
+}
+
+.hero {
+    height: 100vh;
+    color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../img/backgroundimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+    
+    text-align: center;
+    padding-bottom: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.placa{
+    height: 100vh;
+    color: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+    
+    text-align: center;
+    padding-bottom: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.placa-title{
+    font-size: 2rem;
+    color: #000000;
+
+}
+.placa-text {
+    width: 100%;
+    color: #000000;
+    justify-content: center;
+    text-align: center; 
+    
+}
+.placa-content {
+    padding: 2rem;
+    border-radius: .5rem;
+    width: 50%;
+    background-color: rgb(186, 235, 209);
+    
+}
+.card-header { background-color:  rgb(186, 235, 209);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    weight: 500
+}    
+
+
+.card-text { font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    weight: 300
+}    
+.ol {
+        font-family: 'Montserrat', sans-serif; 
+        font-size: 1rem;
+    }        
+
+   .btn-primary { color: rgb(244, 248, 243);
+                background-color: black;    
+                border-color:rgb(0, 255, 76)
+}
+
+.catalog-image {
+    width: 100%;
+    height: 600px; 
+    object-fit: contain; 
+    border-radius: 8px; color: rgb(132, 224, 109);
+}
+
+@media (min-width: 768px) {
+    .catalog-image {
+        height: 250px; 
+    }
+}
+
+
+    
+/* Contacto */
+
+
+
+
+
+.form-container {
+    background-color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(186, 235, 209); 
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgb(0 ,0 ,0 ,2);
+    border-radius: 20px;
+    text-align: center;
+    width: 340px;
+    
+}
+
+form h2 { color: rgb(54, 173, 104);
+    font-size: 25px;
+
+}
+
+.form-txt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-txt a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.form-txt a:hover {
+    color: rgb(54, 173, 104);
+   
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input , textarea {
+   background-color: rgb(153, 214, 182);
+   padding: 20px 14px;
+   margin-bottom: 25px;
+   border: 0;
+   border-radius: 10px;
+   font-size: 15px;
+   color: #020202;
+}
+
+::placeholder {
+    color: rgb(24, 165, 123);
+    font-size: 15px;
+}
+
+:focus {
+    outline: 1px solid rgb(120, 248, 81);
+}
+
+.btn {
+background-color: rgb(120, 248, 81);
+color: rgb(24, 165, 123);
+font-size: 17px;
+cursor: pointer;
+}
+
+.btn:hover { background-color: rgb(112, 235, 75) ;
+}
+
+@media(max-width:991px) {
+
+    body { padding: 30px;
+
+    }
+    form { width: 100%;
+
+    }
+}
+
+
+------------/* Home */--------------
+
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.slider-wrapper .image-list {
+    display: grid;
+    gap: 18px;
+    font-size: 0;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: (10, 1fr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+.slider-wrapper .image-list ::-webkit-scrollbar{
+    display: none;
+}
+
+.slider-wrapper .image-list .image-item {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+
+}
+
+.container {
+    max-width: 1200px;
+    width: 95%;
+}
+
+.container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slider-scrollbar .scrollbar-track {
+    height: 2px;
+    width: 100%;
+    background-color: #000000;
+    position: relative;
+    border-radius: 4px;
+}
+
+.slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background-color: #000000;
+    border-radius: inherit;
+    cursor: grab;
+}
+
+.slider-scrollbar .scrollbar-thumb ::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+}
