@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+    &::selection { 
+        background-color: black;
+        color: color rgb(186, 235, 209);
+    }
+
+}
+
+body {
+    background-color: rgb(226, 226, 226);
+    font-family: 'Soyuz Grotesk', sans-serif;;
+    text-align: center;
+   
+}
+   
+

@@ -1,0 +1,27 @@
+.headertitle {
+    text-align: left;
+    justify-content: left;
+    padding-right: 55%;
+    margin-left: 10px;
+
+    .navbar {
+        color: rgb(186, 235, 209);  
+        font-family:'Soyuz Grotesk', sans-serif;;
+        
+        .custom-navbar {
+            background-color: rgb(186, 235, 209);  
+          }
+        .menu {
+            list-style-type: none;
+            display: flex;
+            gap: 2rem;
+        }    
+
+        .menu-link {
+            text-decoration: none;
+            color: #000000;
+        }
+    
+    }
+
+}

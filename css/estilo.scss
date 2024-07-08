@@ -1,0 +1,63 @@
+
+@import "./partials/variables";
+@import "./partials/reset";
+@import "./partials/header";
+@import "./partials/footer";
+
+
+
+
+
+$estilo-fuente: normal 20px 'Soyuz Grotesk', sans-serif ;
+
+.titulo { 
+ font: $estilo-fuente;
+ color: rgb(0, 0, 0);
+}
+
+.navbar {
+    color: rgb(186, 235, 209);  
+    font-family:$estilo-fuente;
+
+     > .logo { width: 3rem padding-left 15% padding-right 5% left 10px right 80px  height 35px margin-left 30px;
+    }
+}
+
+.menu {
+    list-style-type: none display flex gap 2rem;
+   
+    > .menu-link {
+        text-decoration: none color #000000;
+    } 
+}
+
+.footer{
+    position: fixed justify-content center bottom 0 left 0 right 0 height 35px width 100%; background: rgb(186, 235, 209) padding 15px 20px; margin: 0 auto;font-family:'Soyuz Grotesk', sans-serif;;align-items:self-start;
+     
+    > .instagram-link { color: #000000 font-size 20px display flex position absolute bottom 50% left 1250px right 0px padding .1px top 30%;
+    }
+    
+}
+
+.hero { height: 100vh color #ddd font-family Arial Helvetica sans-serif background-image url("../img/backgroundimg.jpg") background-repeat no-repeat background-size cover background-position-x center background-position-y center background-attachment fixed
+text-align center padding-bottom 100px display flex
+flex-direction column justify-content center
+align-items center;
+}
+
+
+.placa{ height: 100vh color #ddd font-family Arial Helvetica sans-serif background-repeat no-repeat background-size cover background-position-x center background-position-y center background-attachment fixed
+text-align center padding-bottom 100px display flex flex-direction column justify-content center align-items center;
+
+     > .placa-title{ font-size: 2rem color #000000;
+
+     }
+
+     >.placa-text { width: 100% color #000000 justify-content center text-align center;
+       
+     }
+     > .placa-content { padding: 2rem border-radius .5rem width 50% background-color rgb(186, 235, 209);
+       
+    }
+
+}
