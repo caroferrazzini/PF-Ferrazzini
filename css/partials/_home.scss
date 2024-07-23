@@ -1,0 +1,158 @@
+.card-title { 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  color: #ddd;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../img/ginkgofondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-attachment: fixed;
+  text-align: center;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .hero-title {
+    animation: backInLeft;
+    animation-duration: 2s;
+  }
+  
+  .hero-text {
+    animation: backInLeft;
+    animation-duration: 2s;
+  }
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  .slider-wrapper {
+    .slide-button {
+      position: absolute;
+      top: 160%;
+      height: 50px;
+      width: 50px;
+      color: #ddd;
+      border: none;
+      outline: none;
+      background: #000000;
+      font-size: 2.2rem;
+      cursor: pointer;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .slide-button:hover {
+      background: rgb(53, 51, 51);
+    }
+  
+    .slide-button#prev-slide {
+      left: 20px;
+    }
+  
+    .slide-button#next-slide {
+      right: 20px;
+    }
+  
+    .image-list {
+      display: grid;
+      gap: 18px;
+      font-size: 0;
+      margin-bottom: 30px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      grid-template-columns: repeat(10, 1fr);
+      min-height: 100vh;
+    }
+  
+    .image-list::-webkit-scrollbar {
+      display: none;
+    }
+  
+    .image-list .image-item {
+      width: 325px;
+      height: 400px;
+      object-fit: cover;
+    }
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 95%;
+  
+    .slider-scrollbar {
+      height: 24px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+  
+      .scrollbar-track {
+        height: 2px;
+        width: 100%;
+        background-color: #000000;
+        position: relative;
+        border-radius: 4px;
+  
+        &:hover {
+          height: 4px;
+        }
+  
+        &:active {
+          cursor: grabbing;
+          height: 8px;
+          top: -2px;
+        }
+      }
+  
+      .scrollbar-thumb {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        background-color: #000000;
+        border-radius: inherit;
+        cursor: grab;
+  
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: -10px;
+          bottom: -10px;
+        }
+      }
+    }
+  }
+  
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Home - Inicio</title>
+    <meta name="description" content="Ediciones cuidadas de libros únicos.">
+    <meta name="keywords" content="Libros, Literatura, Uruguay, Ediciones, Manuscritos, Editorial Independiente">
     <!-- favicon link -->
     <link rel="shortcut icon" href="../img/favicon.png"type="image/x-icon">
     <!-- font links -->
@@ -19,10 +21,13 @@
 <!-- Animacion link -->  
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<!-- Google fonts iconos  -->  
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-   
+
+<script src="script.js" defer></script>
+      
 
 </head>
 
@@ -70,7 +75,7 @@
 <main>
   
     <section class="hero">
-      <div class="animate__animated animate__bounce">
+      <div class="animate__animated animate__backInLeft">
         <div class="hero-content">
         <h1 class="hero-title"> Ginkgo Editora </h1>
         <p class="hero-text"> Ediciones cuidadas de libros únicos.
@@ -84,26 +89,33 @@
 <div class="slider-container">
     <div  class= "container">
         <div class="slider-wrapper">
+          <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
+
             <div class="image-list">
-
-                <img src="img/cicatriz.jpeg" alt="img-1" class="image-item">
-                <img src="img/ciudad.jpeg" alt="img-2" class="image-item">
-                <img src="img/veintiuno.jpeg" alt="img-3" class="image-item">
-                <img src="img/gato.jpeg" alt="img-4" class="image-item">
-                <img src="img/cara.jpeg" alt="img-5" class="image-item">
-                <img src="img/apuntes.jpeg" alt="img-6" class="image-item">
-                <img src="img/auto.jpeg" alt="img-7" class="image-item">
+               
+               <img src="img/santohorror.jpeg" alt="img-1" class="image-item">
+                <img src="img/cicatriz.jpeg" alt="img-2" class="image-item">
+                <img src="img/ciudad.jpeg" alt="img-3" class="image-item">
+                <img src="img/veintiuno.jpeg" alt="img-4" class="image-item">
+                <img src="img/gato.jpeg" alt="img-5" class="image-item">
+                <img src="img/cara.jpeg" alt="img-6" class="image-item">
+                <img src="img/apuntes.jpeg" alt="img-7" class="image-item">
+                <img src="img/auto.jpeg" alt="img-8" class="image-item">
+                <img src="img/tapajuanandres.jpeg" alt="img-8" class="image-item">
+                <img src="img/tapaanalia.jpeg" alt="img-9" class="image-item">
+                <img src="img/florenciatapa.jpeg" alt="img-10" class="image-item">
+                <img src="img/yeslejos.jpeg" alt="img-11" class="image-item">
+                <img src="img/nariz.jpeg" alt="img-12" class="image-item">
+                <img src="img/tapaacrobacias.jpeg" alt="img-13" class="image-item">
             </div>
-
-             
-        
-        
-        </div>    
+            <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button> 
+         </div>   
+          
             <div class="slider-scrollbar">
                 <div class="scrollbar-track">
                     <div class="scrollbar-thumb"></div>
                 </div>
-            </div>
+             </div>
             
     </div>
 </div>
@@ -113,7 +125,7 @@
 
 
 <!-- Footer -->
-<footer class="footer"
+<footer class="footer">
 
 <p> © Ginkgo Editora, 2024. </p>
                

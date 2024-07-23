@@ -1,0 +1,29 @@
+
+/* Distribución */
+.card-title { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.card-header {
+    background-color: rgb(186, 235, 209);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    .card-text {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .ol {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        color: rgb(244, 248, 243);
+        background-color: black;
+        border-color: rgb(0, 255, 76);
+    }
+}

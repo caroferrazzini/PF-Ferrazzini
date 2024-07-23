@@ -1,24 +1,33 @@
 /*# sourceMappingURL=main.css.map */
-body {
-    background-color: rgb(226, 226, 226);
+html,body {
+     
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: rgb(226, 226, 226);
     font-family: 'Soyuz Grotesk', sans-serif;;
     text-align: center;
    
-}
-   
+    }
+    
 
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
 *::selection { 
     background-color: black;
     color: color rgb(186, 235, 209);
 }
 
+.navbar.custom-navbar {
+    background-color: rgb(186, 235, 209) !important;
+}
 .navbar {
     color: rgb(186, 235, 209);  
     font-family:'Soyuz Grotesk', sans-serif;;
@@ -49,9 +58,9 @@ body {
     color: #000000;
 }
 
-
+/* Footer */
 .footer{
-    position: fixed;
+    position: relative;
     justify-content: center;
     bottom: 0;
     left: 0;
@@ -80,6 +89,7 @@ body {
     top: 30%;
 }
 
+/* Home */
 
 .hero {
     height: 100vh;
@@ -99,53 +109,24 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
+.hero-title {
+    animation: backInLeft; 
+    animation-duration: 2s;
+    }
+    
+    .hero-text {
+        animation: backInLeft; 
+        animation-duration: 2s;
+    }
 
+/* Distribución */
 
-
-.placa{
-    height: 100vh;
-    color: #ddd;
-    font-family: Arial, Helvetica, sans-serif;
-
-
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    background-position-y: center;
-    background-attachment: fixed;
-   
-    text-align: center;
-    padding-bottom: 100px;
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-
+.card-title { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.placa-title{
-    font-size: 2rem;
-    color: #000000;
 
-
-}
-.placa-text {
-    width: 100%;
-    color: #000000;
-    justify-content: center;
-    text-align: center;
-   
-}
-.placa-content {
-    padding: 2rem;
-    border-radius: .5rem;
-    width: 50%;
-    background-color: rgb(186, 235, 209);
-   
-}
 .card-header { background-color:  rgb(186, 235, 209);
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -153,8 +134,6 @@ body {
     font-style: normal;
     weight: 500
 }    
-
-
 
 
 .card-text { font-family: "Montserrat", sans-serif;
@@ -172,52 +151,39 @@ body {
    .btn-primary { color: rgb(244, 248, 243);
                 background-color: black;    
                 border-color:rgb(0, 255, 76)
+
+
 }
-
-
-.catalog-image {
-    width: 100%;
-    height: 600px;
-    object-fit: contain;
-    border-radius: 8px; color: rgb(132, 224, 109);
-}
-
-
-@media (min-width: 768px) {
-    .catalog-image {
-        height: 250px;
-    }
-}
-
-
-
 
    
 /* Contacto */
 
-
-
-
-
-
-
+.main-content {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
 .form-container {
     background-color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
+    min-height: 90vh;
     display: flex;
-    min-height: 100vh;
-    text-align: center;
     align-items: center;
     justify-content: center;
+    text-align: center;
     background-color: rgb(186, 235, 209);
     padding: 50px 55px;
     box-shadow: 0 0 20px rgb(0 ,0 ,0 ,2);
     border-radius: 20px;
     text-align: center;
-    width: 340px;
+    max-height: 80vh;
+    width: 380px;
+     
+    
    
 }
 
@@ -304,13 +270,7 @@ cursor: pointer;
     }
 }
 
-
-
-
-------------/* Home */--------------
-
-
-
+/* Home */
 
 .slider-container {
     display: flex;
@@ -319,6 +279,41 @@ cursor: pointer;
     min-height: 100vh;
 }
 
+.slider-wrapper .slide-button {
+    position: absolute;
+    top: 160%;
+    height: 50px;
+    width: 50px;
+    color: #ddd;
+    border: none;
+    outline: none;
+    background: #000000;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+.slider-wrapper .slide-button:hover {
+ background: rgb(53, 51, 51);
+}
+
+.slider-wrapper .slide-button#prev-slide {
+    left: 20px;
+}
+.slider-wrapper .slide-button#next-slide {
+    right: 20px;
+}
 
 .slider-wrapper .image-list {
     display: grid;
@@ -361,6 +356,7 @@ cursor: pointer;
     width: 100%;
     display: flex;
     align-items: center;
+    
 }
 
 
@@ -370,6 +366,11 @@ cursor: pointer;
     background-color: #000000;
     position: relative;
     border-radius: 4px;
+}
+
+.slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+
 }
 
 
@@ -382,7 +383,15 @@ cursor: pointer;
     cursor: grab;
 }
 
+.slider-scrollbar .scrollbar-track:active {
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
 
+
+
+
+}
 .slider-scrollbar .scrollbar-thumb ::after {
     content: "";
     position: absolute;
