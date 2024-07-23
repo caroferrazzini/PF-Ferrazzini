@@ -13,3 +13,19 @@ de libros: de narrativa, poésia, fotografía, etc.
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script src="script.js" defer></script>
+
+## Colores:
+--rgb(186, 235, 209)
+--color: #000000
+--color: #ddd;
+--rgb(0, 255, 76)
+--rgb(54, 173, 104);
+--rgb(24, 165, 123);
+--rgb(120, 248, 81);
+--rgb(53, 51, 51);
+
+## Tipografía:
+--font-family:'Soyuz Grotesk', sans-serif;
+--font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+--font-family: 'Montserrat', sans-serif;
+--font-family: Arial, Helvetica, sans-serif;
