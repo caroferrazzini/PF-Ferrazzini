@@ -26,24 +26,6 @@ html,body {
 }
 
 
-.catalog-image {
-    width: 100%;
-    height: 600px;
-    object-fit: contain;
-    border-radius: 8px; color: rgb(132, 224, 109);
-}
-
-
-
-
-@media (min-width: 768px) {
-    .catalog-image {
-        height: 250px;
-    }
-}
-
-
-
 .navbar.custom-navbar {
     background-color: rgb(186, 235, 209) !important;
 }
@@ -419,3 +401,43 @@ cursor: pointer;
     top: -10px;
     bottom: -10px;
 }
+
+
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    body {
+      font-size: 14px;
+      padding: 10px;
+    }
+    
+    .navbar {
+      font-size: 16px;
+    }
+  
+    .card {
+      margin-bottom: 20px;
+    }
+    
+    
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 768px) and (max-width: 991px) {
+    body {
+      font-size: 16px;
+      padding: 20px;
+    }
+    
+    .navbar {
+      font-size: 18px;
+    }
+    
+    .card {
+      margin-bottom: 30px;
+    }
+    
+    
+  }
+  
+  
